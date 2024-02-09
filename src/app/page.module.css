@@ -15,7 +15,17 @@
 
 .top_section_text_small {
   display: flex;
+  opacity: 0.85;
   font-size: 2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
+.top_section_text_medium {
+  display: flex;
+  opacity: 0.85;
+  font-size: 2.25rem;
   margin-top: 0px;
   margin-bottom: 0px;
   justify-content: center;
@@ -23,7 +33,7 @@
 
 .top_section_buttons {
   display: flex;
-  margin-top: 2%;
+  margin-top: 3%;
   justify-content: center;
 }
 
@@ -44,7 +54,7 @@
   opacity: 0.95;
 }
 
-.our_projects_button {
+.view_examples_button {
   border: none;
   padding: 1.05rem;
   font-size: 1.25rem;
@@ -57,7 +67,7 @@
   border: 0.2rem solid #E81548;
 }
 
-.our_projects_button:hover {
+.view_examples_button:hover {
   cursor: pointer;
   opacity: 1;
 }
@@ -73,4 +83,109 @@
   margin-left: 2rem;
   display: flex;
   align-items: center;
+}
+
+.middle_section {
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.examples_section {
+  margin-top: 10%;
+}
+
+.solvio {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  width: 50%;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 1.5rem;
+  background-color: #242529;
+  padding: 2rem; /* Add padding for better spacing */
+}
+
+.example_header_text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem; /* Add some space between the text and the image */
+}
+
+.example_header_text,
+.example_text_url {
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+}
+
+.example_top_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.url {
+  color: #FFFFFF;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.example_text_url {
+  font-size: 1.5rem;
+}
+
+.website_screenshot {
+  width: 100%;
+  max-width: 100%;
+  border: 0.2rem solid #FFFFFF;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.white_dot {
+  color: #FFFFFF;
+}
+
+.image_container {
+  width: 70%;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.image_container:hover {
+  transform: scale(1.1);
+}
+
+.image_container:hover .website_screenshot {
+  transform: scale(1.1);
+}
+
+.image_background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background_image {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  max-height: none;
+}
+
+.top_section {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1700px) {
+  .image_background {
+    display: none;
+  }
 }

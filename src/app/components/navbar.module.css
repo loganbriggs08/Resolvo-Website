@@ -1,4 +1,3 @@
-
 .navbar_components {
     display: flex;
     flex-direction: row;
@@ -13,11 +12,37 @@
 
 .navbar_buttons {
     display: flex;
+    align-items: center;
     margin-left: auto;
-    flex-direction: row;
 }
 
 .button_seperator {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.contact_us_button,
+.our_projects_button {
+    border: none;
+    padding: 1.05rem 2rem;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    font-family: 'Rubik', sans-serif;
+    background-color: #E81548;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.our_projects_button {
+    background-color: transparent;
+    border: 0.2rem solid #E81548;
+}
+
+
+.contact_us_button:hover,
+.our_projects_button:hover {
+    cursor: pointer;
+    opacity: 0.95;
 }
