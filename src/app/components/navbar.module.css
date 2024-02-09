@@ -1,0 +1,23 @@
+
+.navbar_components {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.resolvo_text {
+    color: #E81548;
+}
+
+.navbar_buttons {
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+}
+
+.button_seperator {
+    margin-left: 5%;
+    margin-right: 5%;
+}
