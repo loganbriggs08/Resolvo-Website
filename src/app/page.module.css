@@ -4,6 +4,24 @@
   margin-top: 10%;
 }
 
+.header_text {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 4rem;
+  color: #E81548;
+  justify-content: center;
+}
+
+.description_text {
+  display: flex;
+  opacity: 0.85;
+  font-size: 2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
 .top_section_text {
   display: flex;
   margin-top: 0px;
@@ -182,6 +200,10 @@
 .top_section {
   position: relative;
   z-index: 1;
+}
+
+.header_seperator {
+  margin-bottom: 5%;
 }
 
 @media (max-width: 1700px) {

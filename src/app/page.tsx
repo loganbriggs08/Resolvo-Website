@@ -42,6 +42,11 @@ export default function Home() {
       </div>
 
       <div className={styles.examples_section}>
+        <h1 className={styles.header_text}>PROJECTS</h1>
+        <p className={styles.description_text}>Our previous & current projects.</p>
+        
+        <div className={styles.header_seperator}></div>
+
         <div className={styles.solvio}>
           <div className={styles.example_top_section}>
             <div className={styles.image_container}>
