@@ -42,7 +42,7 @@ export default function Home() {
       </div>
 
       <div className={styles.examples_section}>
-        <h1 className={styles.header_text}>PROJECTS</h1>
+        <h1 className={styles.header_text}>PROJECTS<a className={styles.white_dot}>.</a></h1>
         <p className={styles.description_text}>Our previous & current projects.</p>
         
         <div className={styles.header_seperator}></div>
@@ -50,10 +50,14 @@ export default function Home() {
         <div className={styles.solvio}>
           <div className={styles.example_top_section}>
             <div className={styles.image_container}>
-              <img src="solvio_website.png" className={styles.website_screenshot}/>
+              <img src="solvio_app_icon.png" className={styles.solvio_app_icon}/>
             </div>
 
-            <h1 className={styles.example_header_text}>SOLVIO</h1>          
+            <div className={styles.text_row}>
+              <h1 className={styles.example_header_text}>Solvio</h1>          
+              <h1 className={styles.example_header_text_2}>- Hello</h1>          
+            </div>
+
             {/* <a href='https://solvio.app' className={styles.url}>
               <p className={styles.example_text_url}>solvio.app</p>
             </a> */}

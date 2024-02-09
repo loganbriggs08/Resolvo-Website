@@ -111,15 +111,14 @@
 
 .examples_section {
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .solvio {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center horizontally */
   width: 50%;
   margin: 0 auto; /* Center horizontally */
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   background-color: #242529;
   padding: 2rem; /* Add padding for better spacing */
 }
@@ -127,6 +126,11 @@
 .example_header_text {
   font-size: 3rem;
   margin-bottom: 0.5rem; /* Add some space between the text and the image */
+}
+
+.example_header_text_2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .example_header_text,
@@ -152,31 +156,8 @@
   font-size: 1.5rem;
 }
 
-.website_screenshot {
-  width: 100%;
-  max-width: 100%;
-  border: 0.2rem solid #FFFFFF;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-}
-
 .white_dot {
   color: #FFFFFF;
-}
-
-.image_container {
-  width: 70%;
-  transition: transform 0.3s ease;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.image_container:hover {
-  transform: scale(1.1);
-}
-
-.image_container:hover .website_screenshot {
-  transform: scale(1.1);
 }
 
 .image_background {
@@ -203,7 +184,16 @@
 }
 
 .header_seperator {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+}
+
+.solvio_app_icon {
+  width: 30%;
+}
+
+.text_row {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 1700px) {
