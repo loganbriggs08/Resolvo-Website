@@ -53,21 +53,23 @@ export default function Home() {
           <h1><IoIosArrowDown /></h1>
         </div>
 
-        <div className={styles.examples_section}>
-          <h1 className={styles.header_text}>PROJECTS<a className={styles.white_dot}>.</a></h1>
-          <p className={styles.description_text}>Our previous & current projects.</p>
-          
-          <div className={styles.header_seperator}></div>
+        <div className={styles.bottom_section}>
+          <div className={styles.examples_section}>
+            <div className={styles.inside_components}>
+              <h1 className={styles.header_text}>PROJECTS<a className={styles.white_dot}>.</a></h1>
+              <p className={styles.description_text}>Our previous & current projects.</p>
+              
+              <div className={styles.header_seperator}></div>
 
-          <div className={styles.solvio}>
-            <div className={styles.example_top_section}>
-              <div className={styles.image_container}>
-                <img src="solvio_app_icon.png" className={styles.solvio_app_icon}/>
-              </div>
+              <div className={styles.solvio}>
+                <div className={styles.example_top_section}>
+                  <h1 className={styles.solvio_example_text}>SOLVIO<a className={styles.white_dot}>.</a></h1>
+                  <p className={styles.default_medium_text}>Why should Problems have to be difficult? Don't struggle, use Solvio..</p>
 
-              <div className={styles.text_row}>
-                <h1 className={styles.example_header_text}>Solvio</h1>          
-                <h1 className={styles.example_header_text_2}>- Hello</h1>          
+                  <div className={styles.image_container}>
+                    <img src="solvio_website.png" className={styles.solvio_app_icon}/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

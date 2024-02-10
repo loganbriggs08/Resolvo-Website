@@ -6,10 +6,10 @@
 
 .header_text {
   display: flex;
-  margin-top: 0px;
   margin-bottom: 0px;
   font-size: 4rem;
   color: #E81548;
+  padding-top: 5%;
   justify-content: center;
 }
 
@@ -19,6 +19,23 @@
   font-size: 2rem;
   margin-top: 0px;
   margin-bottom: 0px;
+  justify-content: center;
+}
+
+.solvio_example_text {
+  display: flex;
+  margin-bottom: 0px;
+  font-size: 3rem;
+  color: #6C60FF;
+  justify-content: center;
+}
+
+.default_medium_text {
+  display: flex;
+  opacity: 0.85;
+  font-size: 1.5rem;
+  margin-top: 0px;
+  margin-bottom: 5%;
   justify-content: center;
 }
 
@@ -111,21 +128,35 @@
 
 .examples_section {
   margin-top: 10%;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
+
 
 .question_and_answer_section {
   margin-top: 10%;
   margin-bottom: 5%;
 }
 
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom_section {
+  width: 100%;
+  background-color: #242529;
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .solvio {
   display: flex;
   width: 50%;
   margin: 0 auto; /* Center horizontally */
   border-radius: 1rem;
-  background-color: #242529;
+  background-color: #1D1E22;
   padding: 2rem; /* Add padding for better spacing */
 }
 
@@ -143,11 +174,6 @@
 .example_text_url {
   font-family: 'Rubik', sans-serif;
   color: #FFFFFF;
-}
-
-.example_top_section {
-  display: flex;
-  flex-direction: row;
 }
 
 .url {
@@ -193,8 +219,14 @@
   margin-bottom: 3%;
 }
 
+.image_container {
+  text-align: center;
+}
+
 .solvio_app_icon {
-  width: 30%;
+  width: 70%;
+  border-radius: 0.3rem;
+  border: 0.2rem solid #6C60FF;
 }
 
 .text_row {
