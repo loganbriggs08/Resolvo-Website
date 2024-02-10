@@ -63,8 +63,30 @@ export default function Home() {
 
               <div className={styles.solvio}>
                 <div className={styles.example_top_section}>
-                  <h1 className={styles.solvio_example_text}>SOLVIO<a className={styles.white_dot}>.</a></h1>
-                  <p className={styles.default_medium_text}>Why should Problems have to be difficult? Don't struggle, use Solvio..</p>
+                  <h1 className={styles.solvio_example_text}>SOLVIO.APP</h1>
+                  <p className={styles.default_medium_text}>Why should Problems have to be difficult?</p>
+
+                  <div className={styles.tags}>
+                    <div className={styles.tag}>
+                      <p className={styles.default_medium_text}>React Native</p>
+                    </div>
+
+                    <div className={styles.tag}>
+                      <p className={styles.default_medium_text}>NextJS</p>
+                    </div>
+
+                    <div className={styles.tag}>
+                      <p className={styles.default_medium_text}>Typescript</p>
+                    </div>
+
+                    <div className={styles.tag}>
+                      <p className={styles.default_medium_text}>GoLang</p>
+                    </div>
+
+                    <div className={styles.tag}>
+                      <p className={styles.default_medium_text}>Postgres</p>
+                    </div>
+                  </div>
 
                   <div className={styles.image_container}>
                     <img src="solvio_website.png" className={styles.solvio_app_icon}/>
