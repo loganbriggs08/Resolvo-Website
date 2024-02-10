@@ -41,7 +41,7 @@ export default function RootLayout({
         <meta property="og:description" content="Crafting tailored software solutions to meet the end users needs."></meta>
         <meta property="og:image" content="https://resolvo.dev/website_screenshot.png"></meta>
 
-        <title>Solvio - Problems Made Easy.</title>
+        <title>Resolvo - Resolve Today, Innovate Tomorrow.</title>
       </head>
       <body className={`${styles.body} ${rubik.className}`}>
         <NavBar />
