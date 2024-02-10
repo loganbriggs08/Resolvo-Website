@@ -114,6 +114,12 @@
   margin-bottom: 5%;
 }
 
+.question_and_answer_section {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+
 .solvio {
   display: flex;
   width: 50%;
@@ -194,6 +200,63 @@
 .text_row {
   display: flex;
   flex-direction: row;
+}
+
+
+.fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft 1s ease forwards;
+}
+
+.scaleIn {
+  animation: scaleIn 1s ease forwards;
+}
+
+.fadeOut {
+  animation: fadeOutAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 1700px) {
