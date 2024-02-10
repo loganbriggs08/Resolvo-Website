@@ -23,11 +23,10 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 2000); // Adjust this value according to your interval
+    }, 2000);
 
-    // Clear the interval on component unmount to avoid memory leaks
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
     <div className={styles.container}>
@@ -41,7 +40,7 @@ export default function Home() {
           <h1 className={styles.top_section_text}>
             {words[currentIndex]} <a className={styles.white_dot}>.</a>
           </h1>
-          <p className={styles.top_section_text_medium}>to "resolve" problems.</p>
+          <p className={styles.top_section_text_medium}>to &quot;resolve&quot; problems.</p>
           
           <div className={styles.top_section_buttons}>
             <button className={styles.get_in_touch_button}>Get in Touch</button>
