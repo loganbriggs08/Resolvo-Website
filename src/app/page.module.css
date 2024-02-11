@@ -35,6 +35,7 @@
   opacity: 0.85;
   font-size: 1.5rem;
   margin-top: 0px;
+  margin-bottom: 0px;
   justify-content: center;
 }
 
@@ -106,6 +107,55 @@
   opacity: 1;
 }
 
+.example_section_buttons {
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.solvio_view_website_button {
+  text-decoration: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  border-radius: 0.5rem;
+  font-family: 'Rubik', sans-serif;
+  background-color: #6C60FF;
+}
+
+.solvio_view_website_button:hover {
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+.solvio_other_button {
+  border: none;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  border-radius: 0.5rem;
+  font-family: 'Rubik', sans-serif;
+  background-color: transparent;
+  border: 0.2rem solid #6C60FF;
+}
+
+.a_tag_text {
+  padding: 1.1rem;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.solvio_other_button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
 .button_seperator {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -130,7 +180,6 @@
   padding-bottom: 5%;
 }
 
-
 .question_and_answer_section {
   margin-top: 10%;
   margin-bottom: 5%;
@@ -152,38 +201,94 @@
 
 .solvio {
   display: flex;
-  width: 50%;
-  margin: 0 auto; /* Center horizontally */
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   border-radius: 1rem;
   background-color: #1D1E22;
-  padding: 2rem; /* Add padding for better spacing */
+  padding: 1rem;
+}
+
+.example_top_section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.image_container {
+  flex: 0 0 auto;
+  width: 150px;
+  height: auto;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example_details {
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 3.5%;
+}
+
+.tag {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: #242529;
+}
+
+.example_section_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.solvio_view_website_button,
+.solvio_other_button {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 1451px) {
+  .image_background {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .solvio {
+    padding: 0.5rem;
+  }
+
+  .example_top_section {
+    flex-direction: column-reverse;
+  }
+
+  .tags {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .image_container {
+    max-width: 100%;
+  }
 }
 
 .example_header_text {
   font-size: 3rem;
-  margin-bottom: 0.5rem; /* Add some space between the text and the image */
+  margin-bottom: 0.5rem;
 }
 
 .example_header_text_2 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-}
-
-.tag {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 1%;
-  margin-right: 1%;
-  background-color: #242529;
-}
-
-.tags {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  flex-direction: row;
 }
 
 .tag p {
@@ -239,21 +344,10 @@
   margin-bottom: 3%;
 }
 
-.image_container {
-  text-align: center;
-}
-
-.solvio_app_icon {
-  width: 70%;
-  border-radius: 0.3rem;
-  border: 0.2rem solid #6C60FF;
-}
-
 .text_row {
   display: flex;
   flex-direction: row;
 }
-
 
 .fadeIn {
   animation: fadeIn 1s ease forwards;
@@ -271,48 +365,6 @@
   animation: fadeOutAnimation 1s ease-in-out forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes slideInFromLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes scaleIn {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@media (max-width: 1700px) {
-  .image_background {
-    display: none;
-  }
+.solvio_app_icon {
+  width: 100%;
 }
