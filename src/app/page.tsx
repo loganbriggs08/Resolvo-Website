@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import styles from "./page.module.css";
 import { IoIosArrowDown } from "react-icons/io";
-import { handleScrollToContact } from '@/functions/scroll';
+import { handleScrollToContact, handleScrollToResolveProblems } from '@/functions/scroll';
 
 export default function Home() {
   const words: string[] = ["MOBILE APPS", "DESKTOP APPS", "WEB-BASED APPS"];
@@ -48,10 +48,10 @@ export default function Home() {
         </div>
 
         <div className={styles.middle_section}>
-          <h1><IoIosArrowDown /></h1>
+          <h1 className={styles.arrow_down_button} onClick={handleScrollToResolveProblems}><IoIosArrowDown /></h1>
         </div>
 
-        <div className={styles.resolve_problems}>
+        <div className={styles.resolve_problems} id="resolve-problems">
           <h1 className={styles.solve_once_text}><a className={styles.red_text_highlight}>Resolve</a> Problems, Dont Re-Solve.</h1>
           <p className={styles.solve_once_description}>Problems should only have to be solved once and once only.</p>
           <p className={styles.solve_once_description}>Our code is designed to last from the beginning.</p>
