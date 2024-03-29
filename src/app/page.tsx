@@ -37,8 +37,7 @@ export default function Home() {
           <h1 className={styles.top_section_text}>
             {words[currentIndex]} <a className={styles.white_dot}>.</a>
           </h1>
-          <p className={styles.top_section_text_medium}>to {'resolve'} problems.</p>
-
+                    
           <div className={styles.top_section_buttons}>
             <button className={styles.get_in_touch_button}>Get in Touch</button>
             <div className={styles.button_seperator}></div>
