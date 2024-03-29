@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import styles from "./page.module.css";
 import { IoIosArrowDown } from "react-icons/io";
+import { handleScrollToContact } from '@/functions/scroll';
 
 export default function Home() {
   const words: string[] = ["MOBILE APPS", "DESKTOP APPS", "WEB-BASED APPS"];
@@ -40,7 +41,7 @@ export default function Home() {
           <p className={styles.top_section_text_medium}>to &quot;resolve&quot; problems.</p>
           
           <div className={styles.top_section_buttons}>
-            <button className={styles.get_in_touch_button}>Get in Touch</button>
+            <button className={styles.get_in_touch_button} onClick={handleScrollToContact}>Get in Touch</button>
             <div className={styles.button_seperator}></div>
             <button className={styles.view_examples_button}>View Work</button>
           </div>
@@ -51,7 +52,7 @@ export default function Home() {
         </div>
 
         <div className={styles.resolve_problems}>
-          <h1 className={styles.solve_once_text}>Resolve Problems, Don&quot;t Re-Solve.</h1>
+          <h1 className={styles.solve_once_text}><a className={styles.red_text_highlight}>Resolve</a> Problems, Dont Re-Solve.</h1>
           <p className={styles.solve_once_description}>Problems should only have to be solved once and once only.</p>
           <p className={styles.solve_once_description}>Our code is designed to last from the beginning.</p>
 
@@ -63,7 +64,7 @@ export default function Home() {
           <p className={styles.contact_us_description}>Have a very specific query or even just a quick question?</p>
           <p className={styles.contact_us_description}>feel free to email us.</p>
 
-          <div className={styles.email_button_us_container}>
+          <div className={styles.email_button_us_container} id="contact-us">
             <a className={styles.email_us_button} href="mailto:hello@resolvo.dev">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.at_icon}>
                 <path d="M21 12C21 10.1195 20.411 8.28625 19.3156 6.7577C18.2203 5.22915 16.6736 4.08209 14.893 3.47763C13.1123 2.87316 11.187 2.84166 9.38744 3.38754C7.58792 3.93341 6.00459 5.02925 4.85982 6.52115C3.71505 8.01304 3.06635 9.82604 3.00482 11.7055C2.94329 13.585 3.47203 15.4366 4.51677 17.0001C5.56152 18.5637 7.06979 19.7608 8.82975 20.4232C10.5897 21.0856 12.513 21.18 14.3294 20.6933" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
