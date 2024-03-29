@@ -260,6 +260,7 @@
   width: 50%;
   margin-top: 10%;
   margin-bottom: 15%;
+  overflow: hidden;
 }
 
 .solve_once_text {
@@ -327,7 +328,7 @@
 
 .code_editor_image {
   margin-top: 3%;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -452,4 +453,73 @@
 
 .solvio_app_icon {
   width: 100%;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .top_section_text {
+    font-size: 2rem;
+  }
+  .top_section_text_small {
+    margin-top: 30px;
+  }
+  .solve_once_text {
+    font-size: 1.6rem;
+  }
+  .solve_once_description {
+    font-size: 0.8rem;
+  }
+  .contact_us_text {
+    font-size: 1.6rem;
+  }
+  .contact_us_description {
+    font-size: 0.8rem;
+  }
+  .get_in_touch_button, .view_examples_button {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .code_editor_image {
+    width: fill;
+  }
+} 
+
+@media only screen and (max-width: 1300px) {
+  .resolve_problems {
+    text-align: center;
+    width: 90%;
+  }
+
+  .contact_us {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 1150px) {
+  .email_us_button {
+    width: 250px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .email_us_button {
+    width: 150px;
+  }
+}
+/* 460, 360 */
+@media only screen and (max-width: 460px) {
+  .solve_once_text {
+    font-size: 1.2rem;
+  }
+}  
+@media only screen and (max-width: 360px) {
+  .top_section_text_medium {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

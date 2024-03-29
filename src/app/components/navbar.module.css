@@ -46,3 +46,16 @@
     cursor: pointer;
     opacity: 0.95;
 }
+
+@media only screen and (max-width: 750px) {
+    .navbar_components {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .contact_us_button, .our_projects_button {
+        display: none;
+    }
+}
