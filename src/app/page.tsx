@@ -31,13 +31,14 @@ export default function Home() {
         <img src="hero_background.png" alt="Background Image" className={styles.background_image} />
       </div>
 
-      <div className={`${styles.content} ${isAnimating ? styles.fadeIn : ''}`}>
+      <div className={`${styles.content} ${isAnimating ? styles.fadeIn : ""}`}>
         <div className={styles.top_section}>
           <p className={styles.top_section_text_small}>we develop</p>
           <h1 className={styles.top_section_text}>
             {words[currentIndex]} <a className={styles.white_dot}>.</a>
           </h1>
-                    
+          <p className={styles.top_section_text_medium}>to &quot;resolve&quot; problems.</p>
+          
           <div className={styles.top_section_buttons}>
             <button className={styles.get_in_touch_button}>Get in Touch</button>
             <div className={styles.button_seperator}></div>
@@ -50,7 +51,7 @@ export default function Home() {
         </div>
 
         <div className={styles.resolve_problems}>
-          <h1 className={styles.solve_once_text}>Resolve Problems, Don't Re-Solve.</h1>
+          <h1 className={styles.solve_once_text}>Resolve Problems, Don&quot;t Re-Solve.</h1>
           <p className={styles.solve_once_description}>Problems should only have to be solved once and once only.</p>
           <p className={styles.solve_once_description}>Our code is designed to last from the beginning.</p>
 
