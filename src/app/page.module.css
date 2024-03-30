@@ -259,7 +259,7 @@
   margin: auto;
   width: 50%;
   margin-top: 10%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   overflow: hidden;
 }
 
@@ -277,10 +277,23 @@
   font-size: 1.2rem;
 }
 
+.resolving_problems_text {
+  font-size: 2.4rem;
+  margin-bottom: 1.5%;
+  text-align: center;
+}
+
+.resolving_problems_description {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
 .contact_us {
   margin: auto;
   width: 50%;
-  margin-top: 10%;
   margin-bottom: 10%;
 }
 
@@ -334,8 +347,13 @@
   vertical-align: middle;
 }
 
+.constantly_resolving_problems {
+  margin-top: 10%;
+}
+
 .code_editor_image {
   margin-top: 3%;
+  margin-bottom: 5%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -472,6 +490,7 @@
   background-color: #E81547;
 }
 
+
 @media only screen and (max-width: 750px) {
   .top_section_text {
     font-size: 2rem;
@@ -482,7 +501,12 @@
   .solve_once_text {
     font-size: 1.6rem;
   }
-  .solve_once_description {
+
+  .resolving_problems_text {
+    font-size: 1.6rem;
+  }
+
+  .resolving_problems_description {
     font-size: 0.8rem;
   }
   .contact_us_text {
@@ -526,6 +550,10 @@
 /* 460, 360 */
 @media only screen and (max-width: 460px) {
   .solve_once_text {
+    font-size: 1.2rem;
+  }
+
+  .resolving_problems_text {
     font-size: 1.2rem;
   }
 }  

@@ -7,14 +7,14 @@ import NavBar from "./components/navbar";
 const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Resolvo - Resolve Today, Innovate Tomorrow.",
+  title: "Resolvo - Resolve Problems, Don't Re-Solve.",
   description: "Crafting tailored software solutions to meet the end users needs.",
   themeColor: "#DD1546",
 
   openGraph: {
     siteName: "Resolvo",
     
-    title: "Resolvo - Resolve Today, Innovate Tomorrow.",
+    title: "Resolvo - Resolve Problems, Don't Re-Solve.",
     description: "Crafting tailored software solutions to meet the end users needs.",
     images: ["logo.png"]
   }
@@ -37,11 +37,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#DD1546"></meta>
 
         <meta property="og:site_name" content="Resolvo"></meta>
-        <meta property="og:title" content="Resolvo - Resolve Today, Innovate Tomorrow."></meta>
+        <meta property="og:title" content="Resolvo - Resolve Problems, Don't Re-Solve."></meta>
         <meta property="og:description" content="Crafting tailored software solutions to meet the end users needs."></meta>
         <meta property="og:image" content="https://resolvo.dev/website_screenshot.png"></meta>
 
-        <title>Resolvo - Resolve Today, Innovate Tomorrow.</title>
+        <title>Resolvo - Resolve Problems, Don't Re-Solve.</title>
       </head>
       <body className={`${styles.body} ${rubik.className}`}>
         <NavBar />

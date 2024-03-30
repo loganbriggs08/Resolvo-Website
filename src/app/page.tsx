@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import styles from "./page.module.css";
 import { IoIosArrowDown } from "react-icons/io";
+import ImageCarousel from './components/image_carousel';
 import { handleScrollToContact, handleScrollToResolveProblems } from '@/functions/scroll';
 
 export default function Home() {
@@ -51,12 +52,22 @@ export default function Home() {
           <h1 className={styles.arrow_down_button} onClick={handleScrollToResolveProblems}><IoIosArrowDown /></h1>
         </div>
 
+        <div className={styles.constantly_resolving_problems} id="constantly-resolving-problems">
+          <h1 className={styles.resolving_problems_text}><a className={styles.red_text_highlight}>Always</a> Resolving Problems.</h1>
+          <p className={styles.resolving_problems_description}>Our passion is more than coding.. it is solving problems.</p>
+          <p className={styles.resolving_problems_description}>and its not a lie either...</p>
+          
+          <ImageCarousel />
+        </div>
+
         <div className={styles.resolve_problems} id="resolve-problems">
           <h1 className={styles.solve_once_text}><a className={styles.red_text_highlight}>Resolve</a> Problems, Dont Re-Solve.</h1>
           <p className={styles.solve_once_description}>Problems should only have to be solved once and once only.</p>
           <p className={styles.solve_once_description}>Our code is designed to last from the beginning.</p>
 
+
           <img className={styles.code_editor_image} src="code_editor.png"/>
+
         </div>
 
         <div className={styles.contact_us}>
