@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import styles from "./layout.module.css";
+import { Analytics } from "@vercel/analytics/react"
 
 import NavBar from "./components/navbar";
 
@@ -44,6 +45,7 @@ export default function RootLayout({
         <title>Resolvo - Resolve Problems, Dont Re-Solve.</title>
       </head>
       <body className={`${styles.body} ${rubik.className}`}>
+        <Analytics />
         <NavBar />
         {children}
       </body>
