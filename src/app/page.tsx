@@ -44,7 +44,9 @@ export default function Home() {
           <div className={styles.top_section_buttons}>
             <button className={styles.get_in_touch_button} onClick={handleScrollToContact}>Get in Touch</button>
             <div className={styles.button_seperator}></div>
-            <button className={styles.view_examples_button}>View Work</button>
+            <a className={styles.view_examples_button} href="https://github.com/loganbriggs08" target="_blank">
+              View Work
+            </a>
           </div>
         </div>
 
