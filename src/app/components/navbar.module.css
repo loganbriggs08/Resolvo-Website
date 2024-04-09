@@ -23,6 +23,7 @@
 
 .contact_us_button,
 .our_projects_button {
+    text-decoration: none;
     border: none;
     padding: 1.05rem 2rem;
     font-size: 1.25rem;

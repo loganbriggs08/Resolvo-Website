@@ -12,7 +12,7 @@ export default function NavBar() {
             <div className={styles.navbar_buttons}>
                 <button className={styles.contact_us_button} onClick={handleScrollToContact}>Contact Us</button>
                 <div className={styles.button_seperator}></div>
-                <button className={styles.our_projects_button}>Previous Work</button>
+                <a className={styles.our_projects_button} href="https://github.com/loganbriggs08" target="_blank">Previous Work</a>
             </div>
         </div>
     </div>
